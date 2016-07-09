@@ -1,0 +1,43 @@
+minicrt
+
+1. 整体流程如下：
+	入口   void mini_crt_entry(void)
+	main prara init
+	mini_crt_heap_init()
+	mini_crt_io_init()
+	
+	main()
+	
+	mini_crt_exit_routine()
+	
+	crt_fatal_error()
+
+
+2.  heap init
+	mini_crt_heap_init()      init header
+	malloc(unsigned size)
+	free(*ptr)
+
+
+3.  io init
+	fread
+	fwrite
+	fclose
+	fseek
+
+4.  string
+	itoa
+	strcmp(const char* src, const char* dst) 
+	strcpy(char* dest, const char* src)
+	strlen(const char* str)
+
+5.  printf  %s %d
+	fputc
+	fputs
+	printf
+
+
+6.  how to use
+    minicrt.h
+
+
